@@ -417,7 +417,7 @@
 		19A17F285B767BFACD96714B /* Connection+Pragmas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+Pragmas.swift"; sourceTree = "<group>"; };
 		19A17F2B5959B212A33C383F /* CustomFunctionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFunctionsTests.swift; sourceTree = "<group>"; };
 		19A17FDB0B0CFB8987906FD0 /* SchemaChangerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaChangerTests.swift; sourceTree = "<group>"; };
-		3D3C3CCB26E5568800759140 /* SQLite.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SQLite.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3D3C3CCB26E5568800759140 /* SwiftySQLite.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftySQLite.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3D67B3E51DB2469200A4F4C6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		3DF7B78728842972005DD8CA /* Connection+Attach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connection+Attach.swift"; sourceTree = "<group>"; };
 		3DF7B790288449BA005DD8CA /* URIQueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIQueryParameter.swift; sourceTree = "<group>"; };
@@ -436,7 +436,7 @@
 		DBB93D592A22A373009BB96E /* SchemaReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaReaderTests.swift; sourceTree = "<group>"; };
 		DEB306E52B61CEF500F9D46B /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB307112B61CF9500F9D46B /* SQLiteTests visionOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SQLiteTests visionOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEB307132B61D04500F9D46B /* SQLite visionOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SQLite visionOS.xctestplan"; path = "Tests/SQLite visionOS.xctestplan"; sourceTree = "<group>"; };
+		DEB307132B61D04500F9D46B /* SwiftySQLite visionOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SwiftySQLite visionOS.xctestplan"; path = "Tests/SwiftySQLite visionOS.xctestplan"; sourceTree = "<group>"; };
 		EAE5A0362B893C43007C7EA4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		EE247AD31C3F04ED00AE3E12 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE247AD61C3F04ED00AE3E12 /* SQLite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLite.h; sourceTree = "<group>"; };
@@ -469,7 +469,7 @@
 		EE247B8F1C3F822500AE3E12 /* Index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Index.md; sourceTree = "<group>"; };
 		EE247B911C3F822500AE3E12 /* installation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "installation@2x.png"; sourceTree = "<group>"; };
 		EE247B921C3F822600AE3E12 /* playground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playground@2x.png"; sourceTree = "<group>"; };
-		EE247B931C3F826100AE3E12 /* SQLite.swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SQLite.swift.podspec; sourceTree = "<group>"; };
+		EE247B931C3F826100AE3E12 /* SwiftySQLite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = SwiftySQLite.podspec; sourceTree = "<group>"; };
 		EE9180911C46E9D30038162A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		EE9180931C46EA210038162A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -630,10 +630,10 @@
 		EE247AC91C3F04ED00AE3E12 = {
 			isa = PBXGroup;
 			children = (
-				3D3C3CCB26E5568800759140 /* SQLite.playground */,
-				EE247AD51C3F04ED00AE3E12 /* SQLite */,
-				EE247AE11C3F04ED00AE3E12 /* SQLiteTests */,
-				DEB307132B61D04500F9D46B /* SQLite visionOS.xctestplan */,
+				3D3C3CCB26E5568800759140 /* SwiftySQLite.playground */,
+				EE247AD51C3F04ED00AE3E12 /* SwiftySQLite */,
+				EE247AE11C3F04ED00AE3E12 /* SwiftySQLiteTests */,
+				DEB307132B61D04500F9D46B /* SwiftySQLite visionOS.xctestplan */,
 				EE247B8A1C3F81D000AE3E12 /* Metadata */,
 				EE247AD41C3F04ED00AE3E12 /* Products */,
 				3D67B3E41DB2469200A4F4C6 /* Frameworks */,
@@ -658,7 +658,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE247AD51C3F04ED00AE3E12 /* SQLite */ = {
+		EE247AD51C3F04ED00AE3E12 /* SwiftySQLite */ = {
 			isa = PBXGroup;
 			children = (
 				EE247AD61C3F04ED00AE3E12 /* SQLite.h */,
@@ -671,11 +671,11 @@
 				EE247AF91C3F06E900AE3E12 /* Typed */,
 				19A1792D261C689FC988A90A /* Schema */,
 			);
-			name = SQLite;
-			path = Sources/SQLite;
+			name = SwiftySQLite;
+			path = Sources/SwiftySQLite;
 			sourceTree = "<group>";
 		};
-		EE247AE11C3F04ED00AE3E12 /* SQLiteTests */ = {
+		EE247AE11C3F04ED00AE3E12 /* SwiftySQLiteTests */ = {
 			isa = PBXGroup;
 			children = (
 				3DF7B79528846FCC005DD8CA /* Resources */,
@@ -688,8 +688,8 @@
 				19A1798E3459573BEE50FA34 /* Core */,
 				19A17AECBF878B1DAE0AE3DD /* Typed */,
 			);
-			name = SQLiteTests;
-			path = Tests/SQLiteTests;
+			name = SwiftySQLiteTests;
+			path = Tests/SwiftySQLiteTests;
 			sourceTree = "<group>";
 		};
 		EE247AED1C3F06E900AE3E12 /* Core */ = {
@@ -749,7 +749,7 @@
 				EE247B771C3F40D700AE3E12 /* README.md */,
 				3DF7B79A2884C353005DD8CA /* CHANGELOG.md */,
 				EE247B8B1C3F820300AE3E12 /* CONTRIBUTING.md */,
-				EE247B931C3F826100AE3E12 /* SQLite.swift.podspec */,
+				EE247B931C3F826100AE3E12 /* SwiftySQLite.podspec */,
 				3DFC0B862886C239001C8FC9 /* Package.swift */,
 				EE247B8D1C3F821200AE3E12 /* Makefile */,
 				EE9180931C46EA210038162A /* libsqlite3.tbd */,
@@ -1028,7 +1028,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE247ACD1C3F04ED00AE3E12 /* Build configuration list for PBXProject "SQLite" */;
+			buildConfigurationList = EE247ACD1C3F04ED00AE3E12 /* Build configuration list for PBXProject "SwiftySQLite" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2056,7 +2056,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE247ACD1C3F04ED00AE3E12 /* Build configuration list for PBXProject "SQLite" */ = {
+		EE247ACD1C3F04ED00AE3E12 /* Build configuration list for PBXProject "SwiftySQLite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE247AE51C3F04ED00AE3E12 /* Debug */,

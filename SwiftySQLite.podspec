@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "SQLite.swift"
+  s.name             = "SwiftySQLite"
   s.version          = "0.15.3"
   s.summary          = "A type-safe, Swift-language layer over SQLite3."
 
@@ -8,13 +8,13 @@ Pod::Spec.new do |s|
     intent.
                        DESC
 
-  s.homepage         = "https://github.com/stephencelis/SQLite.swift"
+  s.homepage         = "https://github.com/nevermore-imba/SwiftySQLite"
   s.license          = 'MIT'
   s.author           = { "Stephen Celis" => "stephen@stephencelis.com" }
-  s.source           = { :git => "https://github.com/stephencelis/SQLite.swift.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/nevermore-imba/SwiftySQLite.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/stephencelis'
 
-  s.module_name      = 'SQLite'
+  s.module_name      = 'SwiftySQLite'
   s.default_subspec  = 'standard'
   s.swift_versions = ['5']
 
@@ -31,11 +31,11 @@ Pod::Spec.new do |s|
   s.visionos.deployment_target = visionos_deployment_target
 
   s.subspec 'standard' do |ss|
-    ss.source_files = 'Sources/SQLite/**/*.{c,h,m,swift}'
+    ss.source_files = 'Sources/SwiftySQLite/**/*.{c,h,m,swift}'
     ss.exclude_files = 'Sources/**/Cipher.swift'
     ss.library = 'sqlite3'
-    ss.resource_bundle = { 'SQLite.swift' => 'Sources/SQLite/PrivacyInfo.xcprivacy' }
-    
+    ss.resource_bundle = { 'SwiftySQLite' => 'Sources/SwiftySQLite/PrivacyInfo.xcprivacy' }
+
     ss.ios.deployment_target = ios_deployment_target
     ss.tvos.deployment_target = tvos_deployment_target
     ss.osx.deployment_target = osx_deployment_target
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
     ss.visionos.deployment_target = visionos_deployment_target
 
     ss.test_spec 'tests' do |test_spec|
-      test_spec.resources = 'Tests/SQLiteTests/Resources/*'
-      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+      test_spec.resources = 'Tests/SwiftySQLiteTests/Resources/*'
+      test_spec.source_files = 'Tests/SwiftySQLiteTests/*.swift'
       test_spec.ios.deployment_target = ios_deployment_target
       test_spec.tvos.deployment_target = tvos_deployment_target
       test_spec.osx.deployment_target = osx_deployment_target
@@ -52,9 +52,9 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'standalone' do |ss|
-    ss.source_files = 'Sources/SQLite/**/*.{c,h,m,swift}'
+    ss.source_files = 'Sources/SwiftySQLite/**/*.{c,h,m,swift}'
     ss.exclude_files = 'Sources/**/Cipher.swift'
-    ss.resource_bundle = { 'SQLite.swift' => 'Sources/SQLite/PrivacyInfo.xcprivacy' }
+    ss.resource_bundle = { 'SwiftySQLite' => 'Sources/SwiftySQLite/PrivacyInfo.xcprivacy' }
 
     ss.xcconfig = {
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_STANDALONE',
@@ -69,8 +69,8 @@ Pod::Spec.new do |s|
     ss.visionos.deployment_target = visionos_deployment_target
 
     ss.test_spec 'tests' do |test_spec|
-      test_spec.resources = 'Tests/SQLiteTests/Resources/*'
-      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+      test_spec.resources = 'Tests/SwiftySQLiteTests/Resources/*'
+      test_spec.source_files = 'Tests/SwiftySQLiteTests/*.swift'
       test_spec.ios.deployment_target = ios_deployment_target
       test_spec.tvos.deployment_target = tvos_deployment_target
       test_spec.osx.deployment_target = osx_deployment_target
@@ -78,8 +78,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SQLCipher' do |ss|
-    ss.source_files = 'Sources/SQLite/**/*.{c,h,m,swift}'
-    ss.resource_bundle = { 'SQLite.swift' => 'Sources/SQLite/PrivacyInfo.xcprivacy' }
+    ss.source_files = 'Sources/SwiftySQLite/**/*.{c,h,m,swift}'
+    ss.resource_bundle = { 'SwiftySQLite' => 'Sources/SwiftySQLite/PrivacyInfo.xcprivacy' }
 
     ss.xcconfig = {
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
@@ -94,8 +94,8 @@ Pod::Spec.new do |s|
     #ss.visionos.deployment_target = visionos_deployment_target # Not supported by SQLCipher for now
 
     ss.test_spec 'tests' do |test_spec|
-      test_spec.resources = 'Tests/SQLiteTests/Resources/*'
-      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+      test_spec.resources = 'Tests/SwiftySQLiteTests/Resources/*'
+      test_spec.source_files = 'Tests/SwiftySQLiteTests/*.swift'
       test_spec.ios.deployment_target = ios_deployment_target
       test_spec.tvos.deployment_target = tvos_deployment_target
       test_spec.osx.deployment_target = osx_deployment_target
